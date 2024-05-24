@@ -20,3 +20,4 @@ resource "aws_instance" "test" {
     Name = "test-demo"
   }
 }
+
