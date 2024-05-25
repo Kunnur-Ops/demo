@@ -19,8 +19,8 @@ jobs:
 
       - name: Initialize Terraform
         run: terraform init
-        working-directory: ./path-to-your-terraform-files # Update this path if your .tf files are in a subdirectory
+        working-directory: ./terraform # Update this path to the correct directory
 
       - name: Terraform Plan
         run: terraform plan -input=false
-        working-directory: ./path-to-your-terraform-files # Update this path if your .tf files are in a subdirectory
+        working-directory: ./terraform # Update this path to the correct directory
