@@ -21,6 +21,8 @@ jobs:
         run: terraform init
         working-directory: ./terraform # Update this path to the correct directory
 
-      - name: Terraform Plan
+      - name: Terraform Plan using tfvars file
         run: terraform plan -input=false
         working-directory: ./terraform # Update this path to the correct directory
+        env:
+          # Option 1: Ensure terraform.tfvars is in the correct directory with variables
