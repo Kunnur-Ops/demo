@@ -19,8 +19,8 @@ jobs:
 
       - name: Initialize Terraform
         run: terraform init
-        working-directory: ./terraform # Update this path to the correct directory
+        working-directory: .terraform-files # Update this path to the correct directory
 
       - name: Terraform Plan using tfvars file
         run: terraform plan -input=false
-        working-directory: ./terraform # Update this path to the correct directory
+        working-directory: .terraform-files/variables.tf # Update this path to the correct directory
